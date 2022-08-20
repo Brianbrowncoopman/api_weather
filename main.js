@@ -48,11 +48,11 @@ function showWeather(data){
 
    const content = document.createElement('div');
    content.innerHTML = `
-      <h5>clima en ${name}</h5>
-      <img src="https://openweathermap.org/img/wn/${arr.icon}@2x.png" alt="icon">
-      <h2>${degrees}°c</h2>
-      <p>Max: ${max}°c </p>
-      <p>Min: ${min}°c </p>
+      <h5 id ="nombre">clima en ${name}</h5>
+      <img id ="picture" src="https://openweathermap.org/img/wn/${arr.icon}@2x.png" alt="icon">
+      <h2 class ="temperatura">${degrees}°c</h2>
+      <p class ="tmax">Max: ${max}°c </p>
+      <p class ="tmin">Min: ${min}°c </p>
    `; 
 
    result.appendChild(content);
